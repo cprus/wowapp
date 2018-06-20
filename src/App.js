@@ -13,11 +13,14 @@ class App extends Component {
     this.state = { 
       character: [],
     };
-    this.getCharacter = this.getCharacter.bind(this);
   }
-  
 
-  getCharacter(realm, name) {
+  
+  // if (this.state.character) {
+  //   return <CharacterInfo />
+  // }
+
+  getCharacter = (realm, name) => {
     fetch(`https://us.api.battle.net/wow/character/${realm}/${name}?fields=appearance&locale=en_US&apikey=${KEY}`)
       .then(response => response.json())
       .then(

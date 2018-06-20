@@ -8,7 +8,6 @@ class SearchCharacters extends Component {
             name: 'Ex: Noobslayer',
             realm: 'None'
         }
-        this.onSubmitForm = this.onSubmitForm.bind(this);
     };
 
     onTextChange(name) {
@@ -19,7 +18,7 @@ class SearchCharacters extends Component {
         this.setState({ realm });
         console.log(this.state.realm);
     }
-    onSubmitForm(event) {
+    onSubmitForm = (event) => {
         event.preventDefault();
         const realm = this.state.realm;
         const name = this.state.name;

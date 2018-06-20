@@ -42,6 +42,12 @@ const CharacterInfo = ({ character }) => {
             case 24:
             return "Pandaren";
 
+            case 25:
+            return "Pandaren";
+
+            case 26:
+            return "Pandaren";
+
             case 27:
             return "Nightborne";
 
@@ -102,13 +108,18 @@ const CharacterInfo = ({ character }) => {
         }
     }
     
+     if (character.length === 0) {
+         return null;
+     }
 
     return (
         <div>
             <h3>Name: {character.name}</h3>
             <p>Level {character.level} {whichRace(character.race)} {whichClass(character.class)}</p>
         </div>
+        
     )
+
 
    
 };
