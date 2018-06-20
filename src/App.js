@@ -14,7 +14,7 @@ class App extends Component {
       character: [],
     };
   }
-
+  //tichondrius/55/183003191-avatar.jpg
   
   // if (this.state.character) {
   //   return <CharacterInfo />

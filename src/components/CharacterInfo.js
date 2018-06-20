@@ -111,9 +111,10 @@ const CharacterInfo = ({ character }) => {
      if (character.length === 0) {
          return null;
      }
-
+     
     return (
         <div>
+            <img src={"https://render-us.worldofwarcraft.com/character/" + character.thumbnail } alt="Character" />
             <h3>Name: {character.name}</h3>
             <p>Level {character.level} {whichRace(character.race)} {whichClass(character.class)}</p>
         </div>
